@@ -9,12 +9,12 @@ const Navegation = () => {
             link: "/Episodios",
         },
         {
-            title: "Locais",
+            title: "Mangá",
             link: "/",
         },
         {
             title: "Personagens",
-            link: "/",
+            link: "/personagens",
         },
     ]
 

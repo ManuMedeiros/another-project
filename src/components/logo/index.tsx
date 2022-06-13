@@ -3,11 +3,14 @@ import * as S from "./styles"
 import Image from 'next/image'
 
 import logo from '../../assets/logo.png';
+import Link from "next/link";
 
 const Logo = () => {
     return (
         <S.DivGenetal>
-            <Image src={logo} alt='logo'/>
+            <Link href='/' passHref>
+                <Image src={logo} alt='logo' />
+            </Link>
         </S.DivGenetal>
     )
 }
