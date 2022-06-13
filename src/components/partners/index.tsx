@@ -32,8 +32,8 @@ const Partner = () => {
         <S.DivGeneral>
             <h2>Parcerias</h2>
             <S.ContainerImg>
-                {mockPartnes.map((items) => (
-                    <Link href={items.link}>
+                {mockPartnes.map((items, index) => (
+                    <Link href={items.link} key={index}>
                         <a target="_blank"><img src={items.img.src} /></a>
                     </Link>
                 ))}
