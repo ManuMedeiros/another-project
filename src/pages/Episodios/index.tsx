@@ -8,7 +8,7 @@ import * as S from "./styles";
 
 const Episodios: NextPage = () => {
   const [another, setAnother] = useState<any>();
-  const [openModal, setOpenModal] = useState();
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     axios
@@ -18,7 +18,6 @@ const Episodios: NextPage = () => {
       });
   }, []);
 
-  console.log(another, "another");
   return (
     <S.DivGeneral>
       <AnotherAnime
@@ -34,13 +33,17 @@ const Episodios: NextPage = () => {
                 <ContentEps
                   src={another?.logoEps}
                   text={`${items.number} - ${items.name}`}
-                  onClick={() => {}}
+                  onClick={() => setOpenModal(!openModal)}
                 />
+                {openModal && (
+                  <S.DivModal>
+                    <ModalEp video={items.episode} close={() => setOpenModal(!openModal)} />
+                  </S.DivModal>
+                )}
               </>
             );
           })}
       </S.DivContent>
-      <ModalEp />
     </S.DivGeneral>
   );
 };
