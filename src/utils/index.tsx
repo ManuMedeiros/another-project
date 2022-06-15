@@ -45,11 +45,6 @@ export const personagens = [
         nome: 'Tatsuji Chibiki',
         img: 'http://3.bp.blogspot.com/-QNK2mYuuf8A/UQQh1_AzOZI/AAAAAAAAD_w/L75YkIcsBms/s400/Tatsuji+Chibiki++%5Bcantinho+da+drw%5D.png',
         morte: false,
-        size: {
-            p: true,
-            m: false,
-            g: true,
-        },
         tipo: '',
         descricao: 'Tatsuji Chibiki é bibliotecário na Yomiyama North Middle School . Há 26 anos, em 1972, ele era o professor de sala de aula para a turma do 9º ano da 3ª série .',
     },

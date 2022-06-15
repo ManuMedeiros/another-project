@@ -7,8 +7,9 @@ const Persona = () => {
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {
-        setOpen(!open)
+            setOpen(!open)
     }
+
     return (
         <S.DivGeneral>
             {personagens.map((itens, index) => (
