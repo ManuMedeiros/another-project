@@ -10,7 +10,7 @@ const Navegation = () => {
         },
         {
             title: "Mangá",
-            link: "/",
+            link: "/manga",
         },
         {
             title: "Personagens",
