@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as S from "./styles";
-import page from "../../assets/manga/volume 1/AnotherCap.1/000a.jpg";
+import { cap1 } from "src/assets/manga/volume 1/AnotherCap.1/cap1";
 
 const VolumeManga = () => {
 
@@ -14,7 +14,10 @@ const VolumeManga = () => {
                 </S.DivCap>
                 {open && (
                     <S.DivRenderCap>
-                        <img src={page.src} />
+                        {cap1.map((page) => (
+                            <img src={page.page} />
+                        ))}
+                        
                     </S.DivRenderCap>
                 )}
             </S.Cap>
