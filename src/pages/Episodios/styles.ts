@@ -14,8 +14,8 @@ export const DivContent = styled.div`
 `;
 
 export const DivModal = styled.div`
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: 75%;
   top: 25%;
   display: flex;
   justify-content: center;
