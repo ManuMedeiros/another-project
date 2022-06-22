@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DivGeneral = styled.footer`
-    background: #2E2D2D;
+    background: #101010;
     display: flex;
     align-items: center;
     justify-content: center;

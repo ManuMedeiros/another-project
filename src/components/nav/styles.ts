@@ -5,7 +5,7 @@ export const DivGeneral = styled.div`
     align-items: center;
     justify-content: space-evenly;
     background-color: #101010;
-    height: 6.5rem;
+    height: 7rem;
     width: 100%;
 `;
 

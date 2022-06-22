@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     body {
-        width: 1440px;
+        max-width: 100%;
         margin: 0 auto;
         background: #150808;
         font-family: 'Open Sans', sans-serif;
@@ -28,7 +28,12 @@ export const ContainerTrailer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: end;
-    margin-bottom: 11rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+
+    span {
+        margin-top: 2rem;
+    }
 `;
 
 export const ConatinerEps = styled.div`
@@ -36,6 +41,7 @@ export const ConatinerEps = styled.div`
     flex-direction: column;
     align-items: flex-end;
     width: 50%;
+    margin-right: 5rem;
 `;
 
 export const DivEps = styled.div`

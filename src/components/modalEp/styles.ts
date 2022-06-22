@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const DivGeneral = styled.div`
-  position: relative;
-  width: 80%;
 `;
 
 export const ContarinerEp = styled.div`
@@ -15,13 +13,3 @@ export const ContarinerEp = styled.div`
 
 export const Episode = styled.iframe``;
 
-export const Close = styled.div`
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  background: #ccc;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  cursor: pointer;
-`;

@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./styles"
 import Image from 'next/image'
 
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.jpg';
 import Link from "next/link";
 
 const Logo = () => {
