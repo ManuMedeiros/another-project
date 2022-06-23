@@ -56,14 +56,6 @@ export const personagens = [
         descricao: 'Tatsuji Chibiki é bibliotecário na Yomiyama North Middle School . Há 26 anos, em 1972, ele era o professor de sala de aula para a turma do 9º ano da 3ª série .',
     },
     {
-        id: 8,
-        nome: 'Sanae Mizuno',
-        img: 'http://4.bp.blogspot.com/-tP2J5yQjMd4/UQQh71isNvI/AAAAAAAAD_4/BXFFR9quryo/s320/Zerochan-mizuno-sanae-952423.jpg',
-        morte: true,
-        tipo: 'Morte em um acidente com elevador',
-        descricao: 'Sanae Mizuno (水野沙苗Mizuno Sanae ) foi a enfermeira responsável pelos cuidados de Kouchi durante sua estadia no Hospital Yomiyama . Ela também era a irmã mais velha de Takeru Mizuno , o que a tornou uma pessoa ligada à 9 ª Classe Classe 3 em 1998 .',
-    },
-    {
         id: 9,
         nome: 'Reiko Mikami',
         img: 'http://2.bp.blogspot.com/-ZKNhmUveG90/UQQiA4xix5I/AAAAAAAAEAA/0rMQIKyZG3g/s400/Reiko9.jpg',

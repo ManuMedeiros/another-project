@@ -9,6 +9,7 @@ import LastEp from 'src/components/lastEp';
 const Home: NextPage = () => {
 
   const [another, setAnother] = useState<any>();
+  const [lastEpisode, setLastEpisode] = useState<any>()
 
   useEffect(() => {
     axios
@@ -17,6 +18,11 @@ const Home: NextPage = () => {
         setAnother(response?.data);
       });
   }, []);
+
+  useEffect(() => {
+    setLastEpisode(localStorage.getItem('LastEpisode'))
+  }, [lastEpisode])
+  const teste = lastEpisode && JSON.parse(lastEpisode);
 
   return (
     <>
@@ -28,8 +34,8 @@ const Home: NextPage = () => {
         </S.ContainerTrailer>
         <S.ConatinerEps>
           <LastEp
-            text='Espisodio 2 - Gravura Azul'
-            img={'https://images6.alphacoders.com/639/thumb-1920-639813.jpg'}
+            text={`${teste && teste[0].number} - ${teste && teste[0].name}`}
+            img={teste && teste[0].episode}
           />
           <Partner />
         </S.ConatinerEps>

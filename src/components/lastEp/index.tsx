@@ -14,7 +14,7 @@ const LastEp = ({text, img}: Props) => {
                 {text}
             </S.Title>
             <S.Episode>
-                <img src={img}/>
+                <iframe src={img}/>
             </S.Episode>
         </S.DivGeneral>
     )

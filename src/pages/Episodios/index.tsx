@@ -18,9 +18,15 @@ const Episodios: NextPage = () => {
       });
   }, []);
 
-  const teste = (value: any) => {
+
+
+  const selectEp = (value: any) => {
+
     setOpenModal(value)
-    console.log(value, 'value')
+    const filterAnime = another && Object.values(another?.anime).filter((ep: any) => {
+      return ep?.episode === value
+    })
+    localStorage.setItem("LastEpisode", JSON.stringify(filterAnime))
   }
 
   return (
@@ -37,7 +43,7 @@ const Episodios: NextPage = () => {
               <>
                   <ContentEps
                     text={`${items.number} - ${items.name}`}
-                    onClick={() => teste(items.episode)}
+                    onClick={() => selectEp(items.episode)}
                   />
               </>
             );

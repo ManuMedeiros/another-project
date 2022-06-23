@@ -14,9 +14,15 @@ const VolumeManga = () => {
                 </S.DivCap>
                 {open && (
                     <S.DivRenderCap>
-                        {cap1.map((page) => (
-                            <img src={page.page} />
-                        ))}
+                        {cap1.map((page) => {
+                            console.log(page)
+                            return (
+                                <img src={page.page.src} />
+                            )
+                        }
+                            
+                           
+                        )}
                         
                     </S.DivRenderCap>
                 )}

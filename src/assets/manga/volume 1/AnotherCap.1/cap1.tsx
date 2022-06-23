@@ -1,14 +1,19 @@
+import pag1 from "./000a.jpg"
+import pag2 from "./000b.jpg"
+import pag3 from "./000c.jpg"
+import pag4 from "./000c.jpg"
+
 export const cap1 = [
     {
-        page: "../../assets/manga/volume 1/AnotherCap.1/000a.jpg"
+        page: pag1,
     },
     {
-        page: "../../assets/manga/volume 1/AnotherCap.1/000b.jpg"
+        page: pag2,
     },
     {
-        page: "../../assets/manga/volume 1/AnotherCap.1/000c.jpg"
+        page: pag3,
     },
     {
-        page: "../../assets/manga/volume 1/AnotherCap.1/000d.jpg"
+        page: pag4,
     },
 ]

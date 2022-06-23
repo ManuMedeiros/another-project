@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const DivGeneral = styled.div`
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 `;
 
 export const Title = styled.h2`

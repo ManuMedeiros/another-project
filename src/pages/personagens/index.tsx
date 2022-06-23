@@ -5,9 +5,9 @@ import * as S from "./styles";
 
 const Personagens: NextPage = () => {
     return (
-        <div>
+        <S.DivGeneral>
             <Persona />
-        </div>
+        </S.DivGeneral>
     )
 }
 
