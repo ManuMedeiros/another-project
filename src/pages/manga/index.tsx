@@ -14,7 +14,7 @@ const Manga: NextPage = () => {
             <div>
                 <h2>Volume 1</h2>
                 <a href="manga/capitulo?numero=1">Capitulo 1</a>
-                <a href="manga/capitulo">Capitulo 2</a>
+                <a href="manga/capitulo?numero=2">Capitulo 2</a>
                 {/* <VolumeManga /> */}
             </div>
             <div>
