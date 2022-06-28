@@ -11,8 +11,5 @@ export const Title = styled.h3`
 `;
 
 export const Episode = styled.div`
-    img {
-        width: 90%;
-        margin-left: 2rem;
-    }
+    margin-left: 1.5rem;
 `;

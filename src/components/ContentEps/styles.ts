@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const Episode = styled.div`  
+export const Episode = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem 1rem ;
+  margin: 0.5rem 1rem;
   cursor: pointer;
   border: 1px solid;
   height: 3rem;

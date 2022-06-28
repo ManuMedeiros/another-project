@@ -44,12 +44,11 @@ const Link = styled.a`
   color: #fff;
   font-size: 20px;
   text-decoration: none;
-  margin: 2rem 0;
+  margin: 2rem 4rem;
 `;
 
 const Capitulo: NextPage = () => {
   const [url, setUrl] = useState<any>();
-  // const teste = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const params = new URLSearchParams(window.location.search);
@@ -67,7 +66,19 @@ const Capitulo: NextPage = () => {
   return (
     <>
       <ContentManga>
-        <Link href="/manga">Voltar</Link>
+        <div style={{ display: "flex" }}>
+          {url?.numero !== "1" && (
+            <Link href={`/manga/capitulo?numero=${+url?.numero - 1}`}>
+              Anterior
+            </Link>
+          )}
+          <Link href="/manga">Voltar</Link>
+          {url?.numero !== "20" && (
+            <Link href={`/manga/capitulo?numero=${+url?.numero + 1}`}>
+              Proximo
+            </Link>
+          )}
+        </div>
         <div>
           <DivGeneral>
             {url?.numero === "1" && (
@@ -220,7 +231,19 @@ const Capitulo: NextPage = () => {
             )}
           </DivGeneral>
         </div>
-        <Link href="/manga">Voltar</Link>
+        <div style={{ display: "flex" }}>
+          {url?.numero !== "1" && (
+            <Link href={`/manga/capitulo?numero=${+url?.numero - 1}`}>
+              Anterior
+            </Link>
+          )}
+          <Link href="/manga">Voltar</Link>
+          {url?.numero !== "20" && (
+            <Link href={`/manga/capitulo?numero=${+url?.numero + 1}`}>
+              Proximo
+            </Link>
+          )}
+        </div>
       </ContentManga>
     </>
   );

@@ -18,8 +18,8 @@ export const FullContent = styled.div`
 export const DivGeneral = styled.div`
     display: flex;
     height: 48.2rem;
-    width: 100%;
-    
+    width: 1280px;
+    margin: 0 auto;
 `;
 
 
@@ -29,7 +29,6 @@ export const ContainerTrailer = styled.div`
     flex-direction: column;
     justify-content: end;
     margin-bottom: 5rem;
-    margin-left: 5rem;
 
     span {
         margin-top: 2rem;
@@ -40,8 +39,7 @@ export const ConatinerEps = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 50%;
-    margin-right: 5rem;
+    width: 31%;
 `;
 
 export const DivEps = styled.div`

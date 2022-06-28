@@ -28,7 +28,7 @@ const Home: NextPage = () => {
     Object.values(another.anime).filter((first: any) => {
       return first.name === "Esboço aspero";
     });
-  console.log(filterFirst, "filterFirst");
+  
   return (
     <>
       <S.DivGeneral>
@@ -40,8 +40,8 @@ const Home: NextPage = () => {
         <S.ConatinerEps>
           {last ? (
             <LastEp
-              text={`${last && last[0].number} - ${last && last[0].name}`}
-              img={last && last[0].episode}
+              text={`${last && last[0]?.number} - ${last && last[0]?.name}`}
+              img={last && last[0]?.episode}
             />
           ) : (
             <>
