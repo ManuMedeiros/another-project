@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./styles";
+import Logo from "../logo";
 
 const Navegation = () => {
 
@@ -20,6 +21,7 @@ const Navegation = () => {
 
     return (
         <S.DivGeneral>
+            <Logo />
             {links.map((items) => (
                 <>
                     <S.DivLinks>

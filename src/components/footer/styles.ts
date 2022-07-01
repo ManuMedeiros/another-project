@@ -7,6 +7,6 @@ export const DivGeneral = styled.footer`
     justify-content: center;
 `;
 
-export const text = styled.h3`
+export const text = styled.p`
     text-align: center;
 `;

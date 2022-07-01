@@ -13,7 +13,7 @@ const Episodios: NextPage = () => {
   );
   const [nameEp, setNameEp] = useState<string>("Esboço aspero");
   const [numberEp, setNumberEp] = useState<any>(1);
-  const [fav, setFav] = useState<boolean>();
+  const [fav, setFav] = useState<boolean>(false);
 
   useEffect(() => {
     axios
@@ -21,19 +21,20 @@ const Episodios: NextPage = () => {
       .then((response) => {
         setAnother(response?.data);
       });
-  }, []);
+  }, [fav]);
 
-  const selectFav = (id: any) => {
+  const selectFav = (id: any, selectedFav: any) => {
     console.log("ok");
+    console.log(id)
     axios
       .patch(
         `https://another-api-8bdc9-default-rtdb.firebaseio.com/another/anime/${id}.json`,
         {
-          favorite: fav,
+          favorite: !selectedFav,
         }
       )
       .then(() => {
-        setFav(!fav);
+        setFav(!fav)
       })
       .catch(() => {
         alert("nao foi possivel");
@@ -74,7 +75,7 @@ const Episodios: NextPage = () => {
                     <Favorite
                       fav={items[1].favorite}
                       ClickFav={() => {
-                        selectFav(items[0]);
+                        selectFav(items[0], items[1].favorite)
                       }}
                     />
                   </S.DivEps>

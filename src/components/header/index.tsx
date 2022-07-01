@@ -6,7 +6,6 @@ import * as S from "./styles"
 const Header = () => {
     return (
         <S.DivGeneral>
-            <Logo/>
             <Navegation/>
         </S.DivGeneral>
     )

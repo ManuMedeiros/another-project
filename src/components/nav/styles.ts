@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const DivGeneral = styled.div`
+    width: 1280px;
+    height: 7rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #101010;
-    height: 7rem;
-    width: 100%;
+    
 `;
 
 export const Link = styled.a`

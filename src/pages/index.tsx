@@ -19,7 +19,11 @@ const Home: NextPage = () => {
   }, []);
 
   useEffect(() => {
-    setLastEpisode(localStorage.getItem("LastEpisode"));
+    if (localStorage.getItem("LastEpisode")) {
+      setLastEpisode(localStorage.getItem("LastEpisode"));
+    } else {
+      return;
+    }
   }, [lastEpisode]);
   const last = lastEpisode && JSON.parse(lastEpisode);
 

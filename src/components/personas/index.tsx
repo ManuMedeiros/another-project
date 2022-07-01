@@ -31,7 +31,7 @@ const Persona = () => {
                             )}
                         </>
                     )}
-                    <S.Button onClick={() => handleOpen(itens.id)}>{text ? 'Fechar' : 'Abrir'}</S.Button>
+                    <S.Button onClick={() => handleOpen(itens.id)}>{open == itens.id && text ? 'Fechar' : 'Abrir'}</S.Button>
                 </S.DivDeath>
             ))}
         </S.DivGeneral>
