@@ -9,10 +9,10 @@ interface Props {
 const LastEp = ({text, img}: Props) => {
     return (
         <S.DivGeneral>
-            <S.Title>
+            <h3>
                 Continue assistindo...<br/>
                 {text}
-            </S.Title>
+            </h3>
             <S.Episode>
                 <iframe src={img}/>
             </S.Episode>

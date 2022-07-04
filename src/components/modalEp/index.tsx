@@ -1,6 +1,5 @@
 import React from "react";
 import * as S from "./styles";
-import CloseIcon from "../../assets/close";
 
 interface Props {
   video: any;

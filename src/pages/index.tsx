@@ -37,7 +37,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard - Another</title>
+        <title>Home - Another</title>
       </Head>
       <S.DivGeneral>
         <S.ContainerTrailer>

@@ -24,11 +24,11 @@ const Navegation = () => {
             <Logo />
             {links.map((items) => (
                 <>
-                    <S.DivLinks>
+                    <div>
                         <S.Link href={items.link}>
                             {items.title}
                         </S.Link>
-                    </S.DivLinks>
+                    </div>
                 </>
             ))}
 

@@ -22,7 +22,7 @@ const Persona = () => {
                             {open === itens.id && (
                                 <>
                                     <div>
-                                        <S.Title>{itens.nome}</S.Title>
+                                        <h2>{itens.nome}</h2>
                                         <S.TitleDeath key={index}>
                                             <strong>Status de morte: </strong>{itens.morte === true ? 'Morto' : 'Vivo'}
                                         </S.TitleDeath>

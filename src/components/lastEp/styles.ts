@@ -6,9 +6,6 @@ export const DivGeneral = styled.div`
     width: 50%;
 `;
 
-export const Title = styled.h3`
-
-`;
 
 export const Episode = styled.div`
     margin-left: 1.5rem;

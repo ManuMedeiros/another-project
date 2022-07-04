@@ -22,7 +22,3 @@ export const Link = styled.a`
         box-shadow: 0px 5px 7px 2px rgba(0,0,0,0.63);
     }
 `;
-
-export const DivLinks = styled.div`
-
-`;

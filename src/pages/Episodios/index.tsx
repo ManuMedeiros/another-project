@@ -2,7 +2,7 @@ import axios from "axios";
 import type { NextPage } from "next";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import ContentEps from "src/components/ContentEps";
+import ContentEps from "src/components/contentEps";
 import Favorite from "src/components/favorite";
 import ModalEp from "src/components/modalEp";
 import * as S from "./styles";
@@ -25,8 +25,6 @@ const Episodios: NextPage = () => {
   }, [fav]);
 
   const selectFav = (id: any, selectedFav: any) => {
-    console.log("ok");
-    console.log(id)
     axios
       .patch(
         `https://another-api-8bdc9-default-rtdb.firebaseio.com/another/anime/${id}.json`,
