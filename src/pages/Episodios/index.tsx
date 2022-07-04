@@ -41,7 +41,6 @@ const Episodios: NextPage = () => {
   };
 
   const selectEp = (value: any, name: string, number: number) => {
-
     setOpenModal(value)
     setNameEp(name)
     setNumberEp(number)
