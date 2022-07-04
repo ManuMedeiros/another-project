@@ -7,7 +7,7 @@ const Navegation = () => {
     const links = [
         {
             title: "Episódios",
-            link: "/episodios",
+            link: "/episodios-another",
         },
         {
             title: "Mangá",
