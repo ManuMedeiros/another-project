@@ -2,7 +2,7 @@ import axios from "axios";
 import type { NextPage } from "next";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import ContentEps from "src/components/contentEps";
+import EpisodesAnother from "src/components/episodesAnother";
 import Favorite from "src/components/favorite";
 import ModalEp from "src/components/modalEp";
 import * as S from "./styles";
@@ -70,7 +70,7 @@ const Episodios: NextPage = () => {
                 return (
                   <>
                     <S.DivEps>
-                      <ContentEps
+                      <EpisodesAnother
                         text={`${items[1].number} - ${items[1].name}`}
                         onClick={() => selectEp(items[1].episode, items[1].name, items[1].number)}
                       />

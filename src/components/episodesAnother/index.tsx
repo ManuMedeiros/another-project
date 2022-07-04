@@ -5,7 +5,7 @@ interface Props {
   text: string;
   onClick: () => void;
 }
-const ContentEps = ({ text, onClick }: Props) => {
+const EpisodesAnother = ({ text, onClick }: Props) => {
 
   return (
     <S.Episode onClick={onClick}>
@@ -14,4 +14,4 @@ const ContentEps = ({ text, onClick }: Props) => {
   );
 };
 
-export default ContentEps;
+export default EpisodesAnother;
