@@ -39,6 +39,7 @@ export const Link = styled.a`
   height: 3rem;
   background: #000;
   border-radius: 8px;
+  box-shadow: 0px 5px 7px 2px rgba(0,0,0,0.63);
   text-align: center;
   padding: 0 2rem;
   color: #fff;

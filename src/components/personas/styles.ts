@@ -11,6 +11,8 @@ export const Title = styled.h2`
 `;
 
 export const Img = styled.img`
+    width: 25rem;
+    height: 14rem;
     margin: 1rem 0;
 `;
 

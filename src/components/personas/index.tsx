@@ -16,17 +16,19 @@ const Persona = () => {
         <S.DivGeneral>
             {personagens.map((itens, index) => (
                 <S.DivDeath key={index}>
-                    <S.Title>{itens.nome}</S.Title>
                     <S.Img src={itens.img}></S.Img>
                     {text && (
                         <>
                             {open === itens.id && (
                                 <>
-                                    <S.TitleDeath key={index}>
-                                        <strong>Status de morte: </strong>{itens.morte === true ? 'Morto' : 'Vivo'}
-                                    </S.TitleDeath>
-                                    {itens.morte && <S.DescriptionDeath>Como morreu: {itens.tipo}</S.DescriptionDeath>}
-                                    <S.Description><strong>Descrição:</strong> {itens.descricao}</S.Description>
+                                    <div>
+                                        <S.Title>{itens.nome}</S.Title>
+                                        <S.TitleDeath key={index}>
+                                            <strong>Status de morte: </strong>{itens.morte === true ? 'Morto' : 'Vivo'}
+                                        </S.TitleDeath>
+                                        {itens.morte && <S.DescriptionDeath><strong>Como morreu:</strong> {itens.tipo}</S.DescriptionDeath>}
+                                        <S.Description><strong>Descrição:</strong> {itens.descricao}</S.Description>
+                                    </div>
                                 </>
                             )}
                         </>

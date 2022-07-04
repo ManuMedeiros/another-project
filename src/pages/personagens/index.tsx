@@ -1,13 +1,19 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import React from "react";
 import Persona from "src/components/personas";
 import * as S from "./styles";
 
 const Personagens: NextPage = () => {
     return (
-        <S.DivGeneral>
-            <Persona />
-        </S.DivGeneral>
+        <>
+            <Head>
+                <title>Personagens - Another</title>
+            </Head>
+            <S.DivGeneral>
+                <Persona />
+            </S.DivGeneral>
+        </>
     )
 }
 

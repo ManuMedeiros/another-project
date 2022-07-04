@@ -1,5 +1,6 @@
 import axios from "axios";
 import type { NextPage } from "next";
+import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import ContentEps from "src/components/ContentEps";
 import Favorite from "src/components/favorite";
@@ -53,38 +54,43 @@ const Episodios: NextPage = () => {
   }
 
   return (
-    <S.DivGeneral>
-      <h1>Another - Anime</h1>
-      <S.DivContent>
-        <ModalEp
-          video={openModal}
-          nameEp={`${numberEp} - ${nameEp}`}
-          src={another && another?.logoEps}
-          description={another && another?.logoAnime.description}
-        />
-        <div>
-          {another &&
-            Object.entries(another.anime).map((items: any) => {
-              return (
-                <>
-                  <S.DivEps>
-                    <ContentEps
-                      text={`${items[1].number} - ${items[1].name}`}
-                      onClick={() => selectEp(items[1].episode, items[1].name, items[1].number)}
-                    />
-                    <Favorite
-                      fav={items[1].favorite}
-                      ClickFav={() => {
-                        selectFav(items[0], items[1].favorite)
-                      }}
-                    />
-                  </S.DivEps>
-                </>
-              );
-            })}
-        </div>
-      </S.DivContent>
-    </S.DivGeneral>
+    <>
+      <Head>
+        <title>Episódios - Another</title>
+      </Head>
+      <S.DivGeneral>
+        <h1>Another - Anime</h1>
+        <S.DivContent>
+          <ModalEp
+            video={openModal}
+            nameEp={`${numberEp} - ${nameEp}`}
+            src={another && another?.logoEps}
+            description={another && another?.logoAnime.description}
+          />
+          <div>
+            {another &&
+              Object.entries(another.anime).map((items: any) => {
+                return (
+                  <>
+                    <S.DivEps>
+                      <ContentEps
+                        text={`${items[1].number} - ${items[1].name}`}
+                        onClick={() => selectEp(items[1].episode, items[1].name, items[1].number)}
+                      />
+                      <Favorite
+                        fav={items[1].favorite}
+                        ClickFav={() => {
+                          selectFav(items[0], items[1].favorite)
+                        }}
+                      />
+                    </S.DivEps>
+                  </>
+                );
+              })}
+          </div>
+        </S.DivContent>
+      </S.DivGeneral>
+    </>
   );
 };
 

@@ -5,6 +5,7 @@ import Trailer from "src/components/trailer";
 import Partner from "src/components/partners";
 import * as S from "../styles/styles";
 import LastEp from "src/components/lastEp";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   const [another, setAnother] = useState<any>();
@@ -32,9 +33,12 @@ const Home: NextPage = () => {
     Object.values(another.anime).filter((first: any) => {
       return first.name === "Esboço aspero";
     });
-  
+
   return (
     <>
+      <Head>
+        <title>Dashboard - Another</title>
+      </Head>
       <S.DivGeneral>
         <S.ContainerTrailer>
           <S.title>Confira o Trailer Oficial!</S.title>

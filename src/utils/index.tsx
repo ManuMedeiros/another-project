@@ -66,9 +66,33 @@ export const personagens = [
     {
         id: 10,
         nome: 'Shoji Kuboradera',
-        img: 'https://static.tvtropes.org/pmwiki/pub/images/kudodera_lesson.jpg',
+        img: 'https://cutewallpaper.org/21/anime-suicidal/Shoji-Kubodera-Another-Wiki-FANDOM-powered-by-Wikia.jpg',
         morte: true,
         tipo: 'Suicídio com uma faca no pescoço',
         descricao: ' Shoji Kubodera é o professor de sala do 9°ano Classe 3 na Escola Yomiyama.Ele e sua mãe são duas das "Mortes de julho".',
+    },
+    {
+        id: 11,
+        nome: 'Tomohiko Kazami',
+        img: 'https://i.pinimg.com/600x315/b1/47/77/b1477723f65239b1bfb1d08c9495c854.jpg',
+        morte: false,
+        tipo: '',
+        descricao: 'Kazami era uma pessoa com uma estatura um pouco abaixo da média, sendo de tez muito pálida, cabelo azul escuro e olhos da mesma cor. Ele usa óculos de aro verde em forma de quadrado. Além disso, ele geralmente é visto vestindo o uniforme padrão masculino da escola, mas sua roupa casual consiste em uma camiseta branca com detalhes em azul e calça cinza.',
+    },
+    {
+        id: 12,
+        nome: 'Takako Sugiura',
+        img: 'https://i.pinimg.com/736x/22/ee/51/22ee51c484ca357014f5f8ad8857ba6f.jpg',
+        morte: true,
+        tipo: 'Sufocada com cabos de energia',
+        descricao: 'Takako Sugiura foi uma aluna da 9ª série da 3ª série em 1998 na Yomiyama North Middle School . Ela e Yumi Ogura ajudam Izumi Akazawa como braço direito pessoal das contramedidas.',
+    },
+    {
+        id: 13,
+        nome: 'Yumi Ogura',
+        img: 'http://pm1.narvii.com/6523/9bfa39c2f217da94ac072eae3e6ee704e1c59c94_00.jpg',
+        morte: true,
+        tipo: 'Pescoço quebrado após cair de uma janela',
+        descricao: 'Yumi Ogura (小椋由美Ogura Yumi ) foi uma das alunas do 9º ano da 3ª série em 1998 . Ela e Takako Sugiura ajudaram Izumi Akazawa em seus deveres como chefe de contramedidas, atuando como suas mãos direita e esquerda. Ela também estava no clube de Drama com Aya Ayano e Izumi.',
     }
 ]

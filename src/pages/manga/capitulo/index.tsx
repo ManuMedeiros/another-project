@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import React, { useEffect, useState } from "react";
+import Head from "next/head";
 import MangaCap from "src/components/mangaCap";
 import { cap1 } from "../../../assets/manga/volume 1/AnotherCap.1/cap1";
 import { cap2 } from "../../../assets/manga/volume 1/AnotherCap.2/cap2";
@@ -65,6 +66,9 @@ const Capitulo: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <title>{`Capítulo ${url?.numero} - Another`}</title>
+      </Head>
       <ContentManga>
         <div style={{ display: "flex" }}>
           {url?.numero !== "1" && (
