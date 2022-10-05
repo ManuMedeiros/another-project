@@ -13,7 +13,9 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     axios
-      .get("https://another-api-8bdc9-default-rtdb.firebaseio.com/another.json")
+      .get(
+        "https://api-another-project-default-rtdb.firebaseio.com/another.json"
+      )
       .then((response) => {
         setAnother(response?.data);
       });
@@ -54,7 +56,9 @@ const Home: NextPage = () => {
           ) : (
             <>
               <LastEp
-                text={`${filterFirst && filterFirst[0].number} - ${filterFirst && filterFirst[0].name}`}
+                text={`${filterFirst && filterFirst[0].number} - ${
+                  filterFirst && filterFirst[0].name
+                }`}
                 img={filterFirst && filterFirst[0].episode}
               />
             </>

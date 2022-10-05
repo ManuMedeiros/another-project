@@ -18,7 +18,9 @@ const Episodios: NextPage = () => {
 
   useEffect(() => {
     axios
-      .get("https://another-api-8bdc9-default-rtdb.firebaseio.com/another.json")
+      .get(
+        "https://api-another-project-default-rtdb.firebaseio.com/another.json"
+      )
       .then((response) => {
         setAnother(response?.data);
       });
@@ -33,7 +35,7 @@ const Episodios: NextPage = () => {
         }
       )
       .then(() => {
-        setFav(!fav)
+        setFav(!fav);
       })
       .catch(() => {
         alert("nao foi possivel");
@@ -41,14 +43,18 @@ const Episodios: NextPage = () => {
   };
 
   const selectEp = (value: any, name: string, number: number) => {
-    setOpenModal(value)
-    setNameEp(name)
-    setNumberEp(number)
-    const filterAnime = another && Object.values(another?.anime).filter((ep: any) => {
-      return ep?.episode === value && ep.name === name && ep.number === number
-    })
-    localStorage.setItem("LastEpisode", JSON.stringify(filterAnime))
-  }
+    setOpenModal(value);
+    setNameEp(name);
+    setNumberEp(number);
+    const filterAnime =
+      another &&
+      Object.values(another?.anime).filter((ep: any) => {
+        return (
+          ep?.episode === value && ep.name === name && ep.number === number
+        );
+      });
+    localStorage.setItem("LastEpisode", JSON.stringify(filterAnime));
+  };
 
   return (
     <>
@@ -61,8 +67,12 @@ const Episodios: NextPage = () => {
           <ModalEp
             video={openModal}
             nameEp={`${numberEp} - ${nameEp}`}
-            src={another && another?.logoEps}
-            description={another && another?.logoAnime.description}
+            src={
+              "https://img1.ak.crunchyroll.com/i/spire1/6a63d28dc4193210a69c83f1fca67bf21325886769_full.jpg"
+            }
+            description={
+              "Há 26 anos, em uma sala de aula do terceiro ano de uma escola média, houve um aluno chamado Misaki. Como um estudante de honra que também era boa em esportes, ela era popular com os colegas de classe. Quando ela morreu de repente, seus colegas decidiram continuar como se ela ainda estava viva até a formatura. Então, na primavera de 1998, um garoto chamado Sakakibara Kouichi transfere para a classe, e ele começa a suspeitar da atmosfera terrível em que a sala de aula. Em particular, há uma garota bonita e distante chamada Mei Misaki que usa um tapa-olho e está sempre sozinha desenhando retratos."
+            }
           />
           <div>
             {another &&
@@ -72,12 +82,18 @@ const Episodios: NextPage = () => {
                     <S.DivEps>
                       <EpisodesAnother
                         text={`${items[1].number} - ${items[1].name}`}
-                        onClick={() => selectEp(items[1].episode, items[1].name, items[1].number)}
+                        onClick={() =>
+                          selectEp(
+                            items[1].episode,
+                            items[1].name,
+                            items[1].number
+                          )
+                        }
                       />
                       <Favorite
                         fav={items[1].favorite}
                         ClickFav={() => {
-                          selectFav(items[0], items[1].favorite)
+                          selectFav(items[0], items[1].favorite);
                         }}
                       />
                     </S.DivEps>

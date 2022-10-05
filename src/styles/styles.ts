@@ -19,7 +19,7 @@ export const DivGeneral = styled.div`
     display: flex;
     height: 48.2rem;
     width: 1280px;
-    margin: 1rem auto;
+    margin: 6rem auto;
 `;
 
 

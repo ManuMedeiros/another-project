@@ -5,5 +5,5 @@ export const DivGenetal = styled.div`
 `;
 
 export const Image = styled.img`
-    height: 7rem;
+    height: 5rem;
 `;
